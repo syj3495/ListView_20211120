@@ -50,7 +50,13 @@ class MainActivity : AppCompatActivity() {
 
             val longClickedStudent = mStudentList[position]
 
-            Toast.makeText(this, "${longClickedStudent.name}길게 클릭됨", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "${longClickedStudent.name}길게 클릭됨", Toast.LENGTH_SHORT).show()
+
+//            찾아낸 학생을 목록에서 제거 -> 리스트뷰 내용물 변경
+            mStudentList.remove( longClickedStudent )
+
+//            어댑터에게 새로고침
+            mStudentAdapter.notifyDataSetChanged()
 
             return@setOnItemLongClickListener true
 
