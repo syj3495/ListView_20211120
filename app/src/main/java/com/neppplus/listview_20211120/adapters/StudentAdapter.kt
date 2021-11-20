@@ -52,8 +52,8 @@ class StudentAdapter(
 
 
 //        (34세)  등으로 나이를 계산 / 가공
-        val age = 2021 - data.birthYear + 1
-        txtAge.text = "(${age})세"
+
+        txtAge.text = "(${ data.getAgeByYear(2021)  })세"
 
 //        row에 담긴 xml을 화면에 뿌려주게 내보내자.
         return row

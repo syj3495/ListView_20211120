@@ -12,6 +12,7 @@ class StudentData(
     fun getAgeByYear( year : Int ) : Int{
 
         val age = year - this.birthYear + 1
+
         return  age
 
     }
