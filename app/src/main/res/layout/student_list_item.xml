@@ -30,6 +30,4 @@
         android:layout_height="wrap_content"
         android:text="서울시 동대문구" />
 
-
-
 </LinearLayout>
