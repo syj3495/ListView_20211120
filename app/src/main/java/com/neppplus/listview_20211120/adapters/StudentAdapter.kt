@@ -42,9 +42,13 @@ class StudentAdapter(
 
 //        뿌려질 UI들을 가져오자. 내부에서 찾아오자
         val txtStudentName = row.findViewById<TextView>(R.id.txtStudentName)
+        val txtAge = row.findViewById<TextView>(R.id.txtAge)
+        val txtAddress = row.findViewById<TextView>(R.id.txtAddress)
 
 //        UI에 데이터에서 필요한 변수 추출 반영
         txtStudentName.text = data.name
+        txtAddress.text = data.address
+        txtAge.text = "${data.birthYear}년생"
 
 
 
